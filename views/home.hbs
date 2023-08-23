@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    {{>nav}}
+    <h1> posts</h1>
+    {{#each post as |p|}}
+        <li class="cardlist">
+            <div class="card">
+                <div class="title">{{p.title}}</div>
+                <img  class="cardImage" src="{{p.imageurl}}" alt="imageurl">
+                <button class="deletebtn"> <a href="/deleteitem?id={{p.id}}">Delete item</a></button>
+             </div>
+    
+        </li>
+    {{/each}}    
+</body>
+</html>

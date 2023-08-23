@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    {{> nav}}
+    <form class="postForm" action="/createpost" method="POST">
+        <label class="postFormIteam" for="title">Title:</label>
+        <input class="postFormIteam" name="title"  id="title" type="text" src="title" alt="title" placeholder="enter title"><br>
+        <label class="postFormIteam" for="image">Image:</label>
+        <input class="postFormIteam" name="imageurl" id="image" type="text" src="img" alt="img" placeholder="Image URL"><br>
+        <button class="postFormIteam" type="submit"> Share Post</button>
+    </form>
+</body>
+</html>
